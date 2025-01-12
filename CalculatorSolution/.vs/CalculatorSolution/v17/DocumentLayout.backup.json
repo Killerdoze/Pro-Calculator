@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\star store\\Desktop\\nv\\CalculatorSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15EB1B49-6D95-4682-AF5E-405CFF6AA887}|CalculatorBackend\\CalculatorBackend.csproj|c:\\users\\star store\\desktop\\nv\\calculatorsolution\\calculatorbackend\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15EB1B49-6D95-4682-AF5E-405CFF6AA887}|CalculatorBackend\\CalculatorBackend.csproj|solutionrelative:calculatorbackend\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EB1B49-6D95-4682-AF5E-405CFF6AA887}|CalculatorBackend\\CalculatorBackend.csproj|c:\\users\\star store\\desktop\\nv\\calculatorsolution\\calculatorbackend\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EB1B49-6D95-4682-AF5E-405CFF6AA887}|CalculatorBackend\\CalculatorBackend.csproj|solutionrelative:calculatorbackend\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EB1B49-6D95-4682-AF5E-405CFF6AA887}|CalculatorBackend\\CalculatorBackend.csproj|c:\\users\\star store\\desktop\\nv\\calculatorsolution\\calculatorbackend\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{15EB1B49-6D95-4682-AF5E-405CFF6AA887}|CalculatorBackend\\CalculatorBackend.csproj|solutionrelative:calculatorbackend\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EB1B49-6D95-4682-AF5E-405CFF6AA887}|CalculatorBackend\\CalculatorBackend.csproj|c:\\users\\star store\\desktop\\nv\\calculatorsolution\\calculatorbackend\\pages\\squarenumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15EB1B49-6D95-4682-AF5E-405CFF6AA887}|CalculatorBackend\\CalculatorBackend.csproj|solutionrelative:calculatorbackend\\pages\\squarenumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\star store\\Desktop\\nv\\CalculatorSolution\\CalculatorBackend\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CalculatorBackend\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\star store\\Desktop\\nv\\CalculatorSolution\\CalculatorBackend\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CalculatorBackend\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAABYAAAAAAAAAAAAuwCgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-11T23:28:25.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SquareNumber.cshtml",
+              "DocumentMoniker": "C:\\Users\\star store\\Desktop\\nv\\CalculatorSolution\\CalculatorBackend\\Pages\\SquareNumber.cshtml",
+              "RelativeDocumentMoniker": "CalculatorBackend\\Pages\\SquareNumber.cshtml",
+              "ToolTip": "C:\\Users\\star store\\Desktop\\nv\\CalculatorSolution\\CalculatorBackend\\Pages\\SquareNumber.cshtml",
+              "RelativeToolTip": "CalculatorBackend\\Pages\\SquareNumber.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAACYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T23:17:35.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\star store\\Desktop\\nv\\CalculatorSolution\\CalculatorBackend\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "CalculatorBackend\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\star store\\Desktop\\nv\\CalculatorSolution\\CalculatorBackend\\Pages\\Index.cshtml",
+              "RelativeToolTip": "CalculatorBackend\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwCIAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T18:11:28.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculatorController.cs",
+              "DocumentMoniker": "C:\\Users\\star store\\Desktop\\nv\\CalculatorSolution\\CalculatorBackend\\Controllers\\CalculatorController.cs",
+              "RelativeDocumentMoniker": "CalculatorBackend\\Controllers\\CalculatorController.cs",
+              "ToolTip": "C:\\Users\\star store\\Desktop\\nv\\CalculatorSolution\\CalculatorBackend\\Controllers\\CalculatorController.cs",
+              "RelativeToolTip": "CalculatorBackend\\Controllers\\CalculatorController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:06:52.272Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
