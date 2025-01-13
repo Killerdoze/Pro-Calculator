@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nHlzgtORDYY=",
+  "dgSpecHash": "Kwl0UapHuBo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\star store\\Desktop\\nv - Copie (2)\\CalculatorSolution\\CalculatorBackend\\CalculatorBackend.csproj",
+  "projectFilePath": "C:\\Users\\star store\\Desktop\\Pro Calculator\\CalculatorSolution\\CalculatorBackend\\CalculatorBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\star store\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\star store\\.nuget\\packages\\fluentassertions\\6.2.0\\fluentassertions.6.2.0.nupkg.sha512",
