@@ -22,11 +22,9 @@ jobs:
         dotnet-version: 6.0
 
     - name: Restore dependencies
-      run: dotnet restore
-
+      run: dotnet restore C:\Users\star store\Desktop\Pro Calculator\CalculatorSolution\CalculatorTestss
     - name: Build solution
-      run: dotnet build --no-restore
+      run: dotnet build C:\Users\star store\Desktop\Pro Calculator\CalculatorSolution\CalculatorTestss
 
     - name: Run tests
-      run: dotnet test --no-build --verbosity normal
-
+      run: dotnet test C:\Users\star store\Desktop\Pro Calculator\CalculatorSolution\CalculatorTestss
