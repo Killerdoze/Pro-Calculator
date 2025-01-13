@@ -1,0 +1,36 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Déclenche le pipeline pour les commits sur la branche "main"
+  pull_request:
+    branches:
+      - main  # Déclenche le pipeline pour les PR vers la branche "main"
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest  # Utilise un environnement Linux
+
+    steps:
+    # Vérifie le code du dépôt
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Configure .NET Core
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '7.0'  # Spécifie la version .NET
+
+    # Restaure les dépendances
+    - name: Restore dependencies
+      run: dotnet restore
+
+    # Compile le projet
+    - name: Build the project
+      run: dotnet build --no-restore --configuration Release
+
+    # Exécute les tests
+    - name: Run tests
+      run: dotnet test --no-build --verbosity normal
