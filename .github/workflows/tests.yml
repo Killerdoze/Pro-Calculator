@@ -25,16 +25,14 @@ jobs:
 
     # Restaure les dépendances
     - name: Restore dependencies
-      run: dotnet restore CalculatorSolution/CalculatorSolution.sln
+      run: dotnet restore CalculatorSolution/CalculatorTestss
 
     # Compile le projet
     - name: Build the project
-      run: dotnet build CalculatorSolution/CalculatorSolution.sln
-
+      run: dotnet build CalculatorSolution/CalculatorTestss
     # Exécute les tests
     - name: Run tests
-      run: dotnet test CalculatorSolution/CalculatorSolution.sln
-
+      run: dotnet test CalculatorSolution/CalculatorTestss
 
 
 
