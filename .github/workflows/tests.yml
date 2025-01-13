@@ -1,21 +1,40 @@
-  GNU nano 8.2              .github/workflows/tests.yml
+name : CI/CD pipline
+
+on:
+  push:
+    branches:
+      - main  # Déclenche le pipeline pour les commits sur la branche "main"
+  pull_request:
+    branches:
+      - main  # Déclenche le pipeline pour les PR vers la branche "main"
+
+jobs:
   build-and-test:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest  
 
     steps:
+    
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Setup .NET
+  
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0
+        dotnet-version: '6.0'  
 
+    # Restaure les dépendances
     - name: Restore dependencies
       run: dotnet restore CalculatorSolution/CalculatorSolution.sln
-    - name: Build solution
+
+    # Compile le projet
+    - name: Build the project
       run: dotnet build CalculatorSolution/CalculatorSolution.sln
-    - name: Run tests CalculatorSolution/CalculatorSolution.sln
+
+    # Exécute les tests
+    - name: Run tests
+      run: dotnet test CalculatorSolution/CalculatorSolution.sln
+
 
 ^G Help      ^O Write Out ^F Where Is  ^K Cut       ^T Execute   ^C Location
 ^X Exit      ^R Read File ^\ Replace   ^U Paste     ^J Justify   ^/ Go To Line
