@@ -1,14 +1,4 @@
-name: Build and Test
-
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
-
-jobs:
+  GNU nano 8.2              .github/workflows/tests.yml
   build-and-test:
     runs-on: ubuntu-22.04
 
@@ -22,9 +12,14 @@ jobs:
         dotnet-version: 6.0
 
     - name: Restore dependencies
-      run: dotnet restore C:\Users\star store\Desktop\Pro Calculator\CalculatorSolution\CalculatorTestss
+      run: dotnet restore C:\Users\star store\Desktop\Pro Calculator\Calculator>
     - name: Build solution
-      run: dotnet build C:\Users\star store\Desktop\Pro Calculator\CalculatorSolution\CalculatorTestss
+      run: dotnet build C:\Users\star store\Desktop\Pro Calculator\CalculatorSo>
 
     - name: Run tests
-      run: dotnet test C:\Users\star store\Desktop\Pro Calculator\CalculatorSolution\CalculatorTestss
+<torSolution\CalculatorTestss
+
+
+^G Help      ^O Write Out ^F Where Is  ^K Cut       ^T Execute   ^C Location
+^X Exit      ^R Read File ^\ Replace   ^U Paste     ^J Justify   ^/ Go To Line
+
