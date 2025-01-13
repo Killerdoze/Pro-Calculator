@@ -12,13 +12,10 @@
         dotnet-version: 6.0
 
     - name: Restore dependencies
-      run: dotnet restore C:\Users\star store\Desktop\Pro Calculator\Calculator>
+      run: dotnet restore CalculatorSolution/CalculatorSolution.sln
     - name: Build solution
-      run: dotnet build C:\Users\star store\Desktop\Pro Calculator\CalculatorSo>
-
-    - name: Run tests
-<torSolution\CalculatorTestss
-
+      run: dotnet build CalculatorSolution/CalculatorSolution.sln
+    - name: Run tests CalculatorSolution/CalculatorSolution.sln
 
 ^G Help      ^O Write Out ^F Where Is  ^K Cut       ^T Execute   ^C Location
 ^X Exit      ^R Read File ^\ Replace   ^U Paste     ^J Justify   ^/ Go To Line
