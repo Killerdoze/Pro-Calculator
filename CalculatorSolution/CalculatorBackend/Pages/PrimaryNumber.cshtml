@@ -1,0 +1,66 @@
+﻿@page
+@model CalculatorBackend.Pages.PrimaryNumberModel
+@{
+    ViewData["Title"] = "Primary Number";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Checker</title>
+    <link rel="stylesheet" href="site.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Check if a Number is Prime</h2>
+        <form id="calculForm" class="form-container">
+            <!-- Input for the number (integer type) -->
+            <input type="number" id="number" name="number" placeholder="Enter a number" required min="1" />
+
+            <!-- Button to check if the number is prime -->
+            <button type="submit" id="calculateBtn">Check</button>
+        </form>
+
+        <!-- Container to display the result -->
+        <div id="result" class="result-container"></div>
+    </div>
+
+    <script>
+        document.getElementById("calculForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            // Get the entered number (as an integer)
+            const number = parseInt(document.getElementById("number").value);
+
+            try {
+                // URL for the prime number calculation API
+                const url = "/Calcul/primeNumber";  // Ensure this route matches in your controller
+
+                // Fetch API call to check if the number is prime
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: `number=${number}`
+                });
+
+                // Check if the response is ok
+                if (response.ok) {
+                    const result = await response.text();
+                    document.getElementById("result").innerText = ` ${result}`; // Display the result
+                } else {
+                    document.getElementById("result").innerText = "Error in API response.";
+                }
+            } catch (error) {
+                document.getElementById("result").innerText = "Error connecting to the API.";
+                console.error(error);
+            }
+        });
+    </script>
+</body>
+</html>
+

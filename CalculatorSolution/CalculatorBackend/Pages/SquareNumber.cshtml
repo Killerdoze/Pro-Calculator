@@ -1,0 +1,64 @@
+﻿@page
+@model CalculatorBackend.Pages.SquareNumberModel
+@{
+    ViewData["Title"] = "Square Root";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Calculator</title>
+    <link rel="stylesheet" href="site.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Calculate the Square Root of a Number</h2>
+        <form id="calculForm" class="form-container">
+            <!-- Input for the number (double type) -->
+            <input type="number" id="number" name="number" placeholder="Enter a number" required step="any" />
+
+            <!-- Button to calculate the square root -->
+            <button type="submit" id="calculateBtn"> √ </button>
+        </form>
+
+        <!-- Container to display the result -->
+        <div id="result" class="result-container"></div>
+    </div>
+
+    <script>
+        document.getElementById("calculForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            // Get the entered number (as a float for double precision)
+            const number = parseFloat(document.getElementById("number").value);
+
+            try {
+                // URL for the square root calculation API
+                const url = "/Calcul/squareRoot";  
+
+                // Fetch API call to calculate the square root
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: `number=${number}`
+                });
+
+                // Check if the response is ok
+                if (response.ok) {
+                    const result = await response.text();
+                    document.getElementById("result").innerText = `Square Root: ${result}`; // Display the result
+                } else {
+                    document.getElementById("result").innerText = "Error in API response.";
+                }
+            } catch (error) {
+                document.getElementById("result").innerText = "Error connecting to the API.";
+                console.error(error);
+            }
+        });
+    </script>
+</body>
+</html>

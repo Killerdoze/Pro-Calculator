@@ -1,0 +1,72 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Calculator</title>
+    <link rel="stylesheet" href="site.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Calculator</h2>
+        <form id="calculForm" class="form-container">
+            <input type="number" id="nombre1" name="nombre1" placeholder="First Number" required step="any" />
+            <input type="number" id="nombre2" name="nombre2" placeholder="Second Number" required step="any"  />
+
+            <button type="submit" id="additionBtn" data-operation="addition">+</button>
+            <button type="submit" id="multiplicationBtn" data-operation="multiplication">*</button>
+            <button type="submit" id="subtractionBtn" data-operation="subtraction">-</button>
+            <button type="submit" id="divisionBtn" data-operation="division">/</button>
+        </form>
+
+        <div id="resultat" class="result-container"></div>
+    </div>
+
+    <script>
+        document.getElementById("calculForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const nombre1 = parseInt(document.getElementById("nombre1").value, 10); 
+            const nombre2 = parseInt(document.getElementById("nombre2").value, 10); 
+            const operation = e.submitter.getAttribute("data-operation");
+
+            try {
+                let url = "";
+                if (operation === "addition") {
+                    url = "/Calcul/calcul";
+                } else if (operation === "multiplication") {
+                    url = "/Calcul/multiplication";
+                } else if (operation === "subtraction") {
+                    url = "/Calcul/subtraction";
+                } else if (operation === "division") {
+                    url = "/Calcul/division"; 
+                }
+
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: `nombre1=${nombre1}&nombre2=${nombre2}`
+                });
+
+                if (response.ok) {
+                    const resultat = await response.text();
+                    document.getElementById("resultat").innerText = `Result : ${resultat}`;
+                } else {
+                    document.getElementById("resultat").innerText = "Erreur dans la réponse de l'API.";
+                }
+            } catch (error) {
+                document.getElementById("resultat").innerText = "Erreur de connexion à l'API.";
+                console.error(error);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+[
+  {
+    "ContainingType": "CalculatorBackend.Controllers.CalculController",
+    "Method": "Calculer",
+    "RelativePath": "Calcul/calcul",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre1",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombre2",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorBackend.Controllers.CalculController",
+    "Method": "Diviser",
+    "RelativePath": "Calcul/division",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre1",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombre2",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorBackend.Controllers.CalculController",
+    "Method": "Multiplier",
+    "RelativePath": "Calcul/multiplication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre1",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombre2",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorBackend.Controllers.CalculController",
+    "Method": "CheckPrimeNumber",
+    "RelativePath": "Calcul/primeNumber",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "number",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorBackend.Controllers.CalculController",
+    "Method": "CalculateSquareRoot",
+    "RelativePath": "Calcul/squareRoot",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "number",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorBackend.Controllers.CalculController",
+    "Method": "Soustraire",
+    "RelativePath": "Calcul/subtraction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre1",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombre2",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
