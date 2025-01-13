@@ -3,7 +3,7 @@ name : CI/CD pipline
 on:
   push:
     branches:
-      - master  # Déclenche le pipeline pour les commits sur la branche "main"
+      - master 
   pull_request:
     branches:
       - master
