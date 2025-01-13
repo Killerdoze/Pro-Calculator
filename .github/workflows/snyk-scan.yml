@@ -27,7 +27,7 @@ jobs:
         run: snyk auth $SNYK_TOKEN
 
       - name: Test for vulnerabilities
-        run: snyk test --file=vulnerable/Vulnerable.csproj --severity-threshold=high
+        run: snyk test --file=CalculatorSolution/CalculatorBackend/CalculatorBackend.csproj --package-manager=nuget --severity-threshold=high
       - name: Authenticate Snyk
         run: snyk auth $SNYK_TOKEN
         env:
