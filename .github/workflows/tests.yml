@@ -3,10 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # Déclenche le pipeline pour les commits sur la branche "main"
+      - master
   pull_request:
     branches:
-      - main  # Déclenche le pipeline pour les PR vers la branche "main"
+      - master
 
 jobs:
   build-and-test:
