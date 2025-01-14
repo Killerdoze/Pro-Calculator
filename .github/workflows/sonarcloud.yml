@@ -23,7 +23,7 @@ jobs:
 
       - name: Run SonarScanner
         run: |
-          dotnet sonarscanner begin /k:"Killerdoze_Pro-Calculator" /o:"Killerdoze" /d:sonar.login=$SONAR_TOKEN /d:sonar.scanner.skipJreProvisioning=true
+          dotnet sonarscanner begin /k:"Killerdoze" /o:"Killerdoze_Pro-Calculator" /d:sonar.login=$SONAR_TOKEN /d:sonar.scanner.skipJreProvisioning=true
           dotnet build
           dotnet sonarscanner end /d:sonar.login=$SONAR_TOKEN
         env:
