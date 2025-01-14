@@ -24,7 +24,7 @@ jobs:
       - name: Run SonarScanner
         run: |
           dotnet sonarscanner begin /k:"Killerdoze_Pro-Calculator" /o:"killerdoze" /d:sonar.login=$SONAR_TOKEN /d:sonar.scanner.skipJreProvisioning=true
-          dotnet build
+          dotnet build C:/Users/star store/Desktop/Pro Calculator/CalculatorSolution/CalculatorSolution.sln
           dotnet sonarscanner end /d:sonar.login=$SONAR_TOKEN
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
