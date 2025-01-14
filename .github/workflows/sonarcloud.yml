@@ -3,7 +3,7 @@ name: SonarCloud Analysis
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
@@ -16,12 +16,12 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '7.0'  # Remplacez par la version .NET Core utilisée dans votre projet
+          dotnet-version: '7.0'  # Remplacez si nécessaire
 
       - name: Install SonarScanner
         run: dotnet tool install --global dotnet-sonarscanner
 
-        - name: Run SonarScanner
+      - name: Run SonarScanner
         run: |
           dotnet sonarscanner begin /k:"Killerdoze_Pro-Calculator" /o:"killerdoze" /d:sonar.login=$SONAR_TOKEN /d:sonar.scanner.skipJreProvisioning=true
           dotnet build
