@@ -21,9 +21,9 @@ jobs:
       - name: Install SonarScanner
         run: dotnet tool install --global dotnet-sonarscanner
 
-      - name: Run SonarScanner
+        - name: Run SonarScanner
         run: |
-          dotnet sonarscanner begin /k:"Killerdoze" /o:"Killerdoze_Pro-Calculator" /d:sonar.login=$SONAR_TOKEN /d:sonar.scanner.skipJreProvisioning=true
+          dotnet sonarscanner begin /k:"Killerdoze_Pro-Calculator" /o:"killerdoze" /d:sonar.login=$SONAR_TOKEN /d:sonar.scanner.skipJreProvisioning=true
           dotnet build
           dotnet sonarscanner end /d:sonar.login=$SONAR_TOKEN
         env:
