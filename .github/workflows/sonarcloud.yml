@@ -3,7 +3,7 @@ name: SonarCloud Analysis
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '7.0'  # Remplacez si nécessaire
+          dotnet-version: '7.0'  
 
       - name: Install SonarScanner
         run: dotnet tool install --global dotnet-sonarscanner
