@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@master
 
       - name: Set up .NET SDK
         uses: actions/setup-dotnet@v4
@@ -22,7 +22,6 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          file: "."
           command: test
           args: --sarif-file-output=snyk.sarif --all-projects
 
