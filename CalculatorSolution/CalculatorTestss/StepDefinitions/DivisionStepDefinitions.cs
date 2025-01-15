@@ -32,7 +32,7 @@ namespace CalculatorTests.StepDefinitions
         [Then(@"the result for division should be (.*)")]
         public void ThenTheResultForDivisionShouldBe(double expectedResult)
         {
-            Assert.AreEqual(expectedResult, _result, "The result of the division is incorrect.");
+            Assert.That(expectedResult, Is.EqualTo(_result), "The result of the division is incorrect.");
         }
 
         private double Divide(double a, double b)

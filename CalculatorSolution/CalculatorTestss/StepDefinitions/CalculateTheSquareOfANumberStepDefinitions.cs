@@ -45,15 +45,15 @@ namespace CalculatorTests.StepDefinitions
             {
                 Assert.Fail(_errorMessage);  // Fail the test if there was an error
             }
-            Assert.AreEqual(expectedResult, _result, 0.01);
+            Assert.That(_result, Is.EqualTo(expectedResult));
         }
 
         // Then: error message is expected for negative numbers
         [Then(@"I should receive an error message")]
         public void ThenIShouldReceiveAnErrorMessage()
         {
-            Assert.IsNotNull(_errorMessage);
-            Assert.AreEqual("The square root of a negative number is not defined in real numbers.", _errorMessage);
+            Assert.That(_errorMessage, Is.Not.Null);
+            Assert.That(_errorMessage, Is.EqualTo("The square root of a negative number is not defined in real numbers."));
         }
 
         // Optionally, if you want to get the result value outside of the test
