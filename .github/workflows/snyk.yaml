@@ -1,5 +1,10 @@
 name: Scan code with Snyk
 on: push
+
+env:
+  # Environment variables for the workflow
+  DOTNET_VERSION: 9.0.x
+  SOLUTION_PATH: ./CalculatorSolution/CalculatorSolution.sln
       
 jobs:
   security:

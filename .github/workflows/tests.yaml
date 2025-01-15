@@ -8,6 +8,11 @@ on:
     branches:
       - master
 
+env:
+  # Environment variables for the workflow
+  DOTNET_VERSION: 9.0.x
+  TEST_PATH: CalculatorSolution/CalculatorTestss
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest  
