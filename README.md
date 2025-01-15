@@ -1,4 +1,3 @@
-First commit
 # Calculator with TDD and security
 ## Features :
 - Addition, Subtraction, Multiplication, Division.
