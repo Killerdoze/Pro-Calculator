@@ -35,7 +35,7 @@ namespace CalculatorTests.StepDefinitions
         [Then(@"the result for subtraction should be (.*)")]
         public void ThenTheResultForSubtractionShouldBe(double expectedResult)
         {
-            Assert.AreEqual(expectedResult, _result, "The result of the subtraction is incorrect.");
+            Assert.That(expectedResult, Is.EqualTo(_result), "The result of the subtraction is incorrect.");
         }
 
         // Method to perform subtraction

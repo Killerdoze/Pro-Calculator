@@ -24,7 +24,7 @@ namespace CalculatorTestss.StepDefinitions  // Changez ici pour correspondre à v
         [Then(@"the prime result should be ""(.*)""")]
         public void ThenTheResultShouldBe(string expectedResult)
         {
-            Assert.AreEqual(expectedResult, _result);
+            Assert.That(_result, Is.EqualTo(expectedResult));
         }
 
         public string GetResult()

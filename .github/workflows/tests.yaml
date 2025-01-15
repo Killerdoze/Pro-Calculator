@@ -1,0 +1,42 @@
+name : CI/CD pipline
+
+on:
+  push:
+    branches:
+      - master 
+  pull_request:
+    branches:
+      - master
+
+env:
+  # Environment variables for the workflow
+  DOTNET_VERSION: 9.0.x
+  TEST_PATH: CalculatorSolution/CalculatorTestss
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest  
+
+    steps:
+    
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Show environment variables
+      run: printenv 
+  
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: "${{ env.DOTNET_VERSION }}"
+
+    # Restaure les dépendances
+    - name: Restore dependencies
+      run: dotnet restore "${{ env.TEST_PATH }}"
+
+    # Compile le projet
+    - name: Build the project
+      run: dotnet build "${{ env.TEST_PATH }}"
+    # Exécute les tests
+    - name: Run tests
+      run: dotnet test "${{ env.TEST_PATH }}"

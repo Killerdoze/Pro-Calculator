@@ -31,7 +31,7 @@ namespace CalculatorTests.StepDefinitions
         [Then(@"the result should be (.*)")]
         public void ThenTheResultShouldBe(double expectedResult)
         {
-            Assert.AreEqual(expectedResult, _result, "The result of the addition is incorrect.");
+            Assert.That(expectedResult, Is.EqualTo(_result), "The result of the addition is incorrect.");
         }
 
         private double Add(double a, double b)

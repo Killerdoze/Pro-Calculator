@@ -39,7 +39,7 @@ namespace CalculatorTests.StepDefinitions
         [Then(@"the result for multiplication should be (.*)")]
         public void ThenTheResultForMultiplicationShouldBe(double expectedResult)
         {
-            Assert.AreEqual(expectedResult, _result, "The result of the multiplication is incorrect.");
+            Assert.That(expectedResult, Is.EqualTo(_result), "The result of the multiplication is incorrect.");
         }
 
         private double Multiply(double a, double b)
