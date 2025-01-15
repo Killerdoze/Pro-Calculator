@@ -6,10 +6,9 @@
 - Square root calculation.
 
 ## Security :
-- Static analysis with SonarCloud.
-- Dependency checks with Dependabot.
-- Dynamic testing with OWASP ZAP.
-
+- Static analysis with Snyk
+- Dependency checks with Snyk
+- Dynamic testing with Snyk
 ## Instructions to Run :
 - Clone the repository.
 - Run with `dotnet run`.
