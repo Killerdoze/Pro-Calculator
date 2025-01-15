@@ -19,7 +19,6 @@ jobs:
 
     - name: Show environment variables
       run: printenv
-
   
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
