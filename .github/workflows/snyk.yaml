@@ -22,7 +22,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          file: .
+          file: "."
           command: test
           args: --sarif-file-output=snyk.sarif --all-projects
           sarif: true
